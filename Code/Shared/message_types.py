@@ -1,0 +1,28 @@
+"""Enum definitions for network messages."""
+
+from enum import Enum
+
+class MessageType(str, Enum):
+    """Standard network message types."""
+    JOIN = "JOIN"
+    LEAVE = "LEAVE"
+    MOVE = "MOVE"
+    CHAT = "CHAT"
+    GAME_START = "GAME_START"
+    GAME_END = "GAME_END"
+    ERROR = "ERROR"
+    HEARTBEAT = "HEARTBEAT"
+    PLAYER_LIST = "PLAYER_LIST"
+    INVITE = "INVITE"
+    INVITE_ACCEPT = "INVITE_ACCEPT"
+    INVITE_REJECT = "INVITE_REJECT"
+    INVITE_RESULT = "INVITE_RESULT"
+    CREATE_ROOM = "CREATE_ROOM"
+    JOIN_ROOM = "JOIN_ROOM"
+    LEAVE_ROOM = "LEAVE_ROOM"
+    ROOM_LIST = "ROOM_LIST"
+    ROOM_LIST_UPDATE = "ROOM_LIST_UPDATE"
+    ROOM_UPDATE = "ROOM_UPDATE"
+    WATCH_ROOM = "WATCH_ROOM"
+    SURRENDER = "SURRENDER"
+    PLAY_AGAIN = "PLAY_AGAIN"

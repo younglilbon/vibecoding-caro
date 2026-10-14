@@ -1,0 +1,2 @@
+# Testing framework
+pytest>=8.0.0
